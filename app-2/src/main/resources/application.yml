@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: app-2
+
+eureka:
+  client:
+    fetch-registry: true # 유레카 클라이언트 활성화
+    register-with-eureka: true # 유레카 클라이언트 활성화
+    service-url:
+      defaultZone: ${EUREKA_URL:http://127.0.0.1:8787/eureka/}
+
